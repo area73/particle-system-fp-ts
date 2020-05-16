@@ -5,7 +5,7 @@ module.exports = {
   },
 
   rules: {
-    'sort-imports': 'error',
+    // 'sort-imports': 'error',
     'prefer-default-export': 'off',
   },
 };

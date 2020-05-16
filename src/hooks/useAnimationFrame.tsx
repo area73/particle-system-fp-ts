@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
 const useAnimationFrame = (callback: Function) => {
   // Use useRef for mutable variables that we want to persist
