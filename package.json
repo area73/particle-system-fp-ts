@@ -1,0 +1,29 @@
+{
+  "name": "particle-system-fp-ts",
+  "version": "1.0.0",
+  "description": "Function particle system created in typescript with fp-ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/area73/particle-system-fp-ts.git"
+  },
+
+  "keywords": [
+    "fp",
+    "typescript",
+    "ts",
+    "particle",
+    "system",
+    "functional",
+    "javascript"
+  ],
+  "author": "Rodrigo Erades <rerades@siete3.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/area73/particle-system-fp-ts/issues"
+  },
+  "homepage": "https://github.com/area73/particle-system-fp-ts#readme"
+}
