@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import useAnimationFrame from './hooks/useAnimationFrame';
 
 function App() {
+  const [count, setCount] = React.useState(0);
+  useAnimationFrame((deltaTime: number) => {
+    // Pass on a function to the setter of the state
+    // to make sure we always have the latest state
+    setCount((prevCount) => (prevCount + deltaTime * 0.01) % 100);
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <canvas id="canvas" style={{ backgroundColor: 'black' }} />
+      <div className="overlay">λ {Math.round(count)}</div>
+    </>
   );
 }
 
