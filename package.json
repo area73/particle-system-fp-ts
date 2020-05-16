@@ -1,29 +1,39 @@
 {
   "name": "particle-system-fp-ts",
-  "version": "1.0.0",
-  "description": "Function particle system created in typescript with fp-ts",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  },
   "scripts": {
-    "test": "test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/area73/particle-system-fp-ts.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-
-  "keywords": [
-    "fp",
-    "typescript",
-    "ts",
-    "particle",
-    "system",
-    "functional",
-    "javascript"
-  ],
-  "author": "Rodrigo Erades <rerades@siete3.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/area73/particle-system-fp-ts/issues"
-  },
-  "homepage": "https://github.com/area73/particle-system-fp-ts#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
